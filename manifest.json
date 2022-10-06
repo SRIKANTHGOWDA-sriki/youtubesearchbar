@@ -1,0 +1,27 @@
+{
+    "manifest_version" : 3,
+    "name" : "Search Bar for BookMarks",
+    "description" : " a searchar bar extension for all the bookmarks to easily find it",
+    "version" :"1.0",
+    "icons" :{
+    "16":"/icons/searchbar.png",
+    "48":"/icons/searchbar.png",
+    "128":"/icons/searchbar.png"
+
+},
+"action" : {
+    "default_icon" : {
+            "16" : "/icons/searchbar.png",
+            "48" :"/icons/searchbar.png",
+            "128":"/icons/searchbar.png"
+
+    }
+},
+"content_scripts":[
+    {
+    "matches" : ["https://www.google.com/*"],
+    "css": ["main.css"]
+
+}]
+
+}
